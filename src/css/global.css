@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+
+  --Very-paleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+  --red-hat: "Red Hat Display", serif;
+  --text-lg: 900 2.2em/150% var(--red-hat);
+  --text-md: 700 1.6em/150% var(--red-hat);
+  --text-sm: 500 1.4em/150% var(--red-hat);
+}
