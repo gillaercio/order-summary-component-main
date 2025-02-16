@@ -10,14 +10,16 @@ html {
 
 :root {
   --Pale-blue: hsl(225, 100%, 94%);
-  --Brightblue: hsl(245, 75%, 52%);
+  --Bright-blue: hsl(245, 75%, 52%);
 
-  --Very-paleblue: hsl(225, 100%, 98%);
-  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Desaturated-blue-transparent: hsl(224, 23%, 55%, 5%);
   --Dark-blue: hsl(223, 47%, 23%);
 
   --red-hat: "Red Hat Display", serif;
   --text-lg: 900 2.2em/150% var(--red-hat);
   --text-md: 700 1.6em/150% var(--red-hat);
-  --text-sm: 500 1.4em/150% var(--red-hat);
+  --text-sm: 500 1.3em/150% var(--red-hat);
+  --text-button: 700 1.4em/150% var(--red-hat);
 }
