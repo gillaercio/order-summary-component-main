@@ -1,5 +1,6 @@
 body {
   display: grid;
+  grid-gap: 10px;
   height: 100vh;
   align-content: center;
   justify-content: center;
@@ -36,34 +37,38 @@ p {
   padding-bottom: 20px;
 }
 
-.plan {
+.plans {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  width: 100%;
+  grid-gap: 60px;
   background-color: var(--Desaturated-blue-transparent);
   border-radius: 10px;
   padding: 15px;
   font: var(--text-sm);
+  font-weight: 900;
 }
 
-.plan span:nth-child(1),
-.plan a {
-  font-weight: 700;
+.plan {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 140px;
+  justify-content: center;
+  align-items: center;
 }
 
-.plan span:nth-child(2) {
+.plan-values span:nth-child(2) {
   color: var(--Desaturated-blue);
 }
 
-.plan a {
+.plans a {
   text-align: right;
-  padding-right: 10px;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+.plans a:hover {
+  opacity: .7;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .proceed {
@@ -78,12 +83,56 @@ p {
   text-decoration: none;
 }
 
+.proceed:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
 .cancel {
   font: var(--text-button);
   color: var(--Desaturated-blue);
   text-decoration: none;
 }
 
+.cancel:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.attribution {
+  font: var(--text-sm);
+  text-align: center;
+}
+
 .attribution a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+
+.attribution a:hover {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1023px) {
+  body {
+    grid-gap: 0;
+  }
+  
+  main {
+    max-width: 375px;
+  }
+
+  #content {
+    padding-inline: 35px;
+  }
+
+  h1 {
+    padding-block: 25px;
+  }
+
+  p {
+    padding-inline: 10px;
+    font-size: 1.4em;
+  }
 }
